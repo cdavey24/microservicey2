@@ -1,9 +1,8 @@
-ahttps://cg7fr2nkgl.execute-api.eu-west-1.amazonaws.com/devhttps://cg7fr2nkgl.execute-api.eu-west-1.amazonaws.com/devsync function uploadFile() {
+async function uploadFile() {
 
     const file = document.getElementById("fileInput").files[0];
 
     const response = await fetch("https://cg7fr2nkgl.execute-api.eu-west-1.amazonaws.com/dev/upload-url");
-
     const data = await response.json();
 
     const uploadURL = data.uploadURL;
@@ -18,7 +17,7 @@ ahttps://cg7fr2nkgl.execute-api.eu-west-1.amazonaws.com/devhttps://cg7fr2nkgl.ex
 
 async function loadStats() {
 
-    const response = await fetch(""https://cg7fr2nkgl.execute-api.eu-west-1.amazonaws.com/dev/stats");
+    const response = await fetch("https://610g7d57n5.execute-api.eu-west-1.amazonaws.com/dev/stats");
 
     const data = await response.json();
 
