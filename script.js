@@ -1,4 +1,4 @@
-async function uploadFile() {
+ahttps://cg7fr2nkgl.execute-api.eu-west-1.amazonaws.com/devhttps://cg7fr2nkgl.execute-api.eu-west-1.amazonaws.com/devsync function uploadFile() {
 
     const file = document.getElementById("fileInput").files[0];
 
@@ -18,7 +18,7 @@ async function uploadFile() {
 
 async function loadStats() {
 
-    const response = await fetch("YOUR_API_ENDPOINT/stats");
+    const response = await fetch(""https://cg7fr2nkgl.execute-api.eu-west-1.amazonaws.com/dev/stats");
 
     const data = await response.json();
 
