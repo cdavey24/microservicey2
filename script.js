@@ -15,3 +15,19 @@ async function uploadFile() {
 
     document.getElementById("status").innerText = "Upload complete!";
 }
+
+async function loadStats() {
+
+    const response = await fetch("YOUR_API_ENDPOINT/stats");
+
+    const data = await response.json();
+
+    const list = document.getElementById("statsList");
+    list.innerHTML = "";
+
+    data.forEach(item => {
+        const li = document.createElement("li");
+        li.innerText = item.programme + ": " + item.studentCount;
+        list.appendChild(li);
+    });
+}
